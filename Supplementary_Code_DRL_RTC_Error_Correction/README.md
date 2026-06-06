@@ -133,8 +133,9 @@ swmm-error-compensation/
 ├─ results/
 ├─ _teminp/
 └─ _temtestinp/
+```
 
-Configuration
+## Configuration
 The simulation environment is configured through:
 states_yaml/tiaoxu1.yaml
 This configuration file specifies:
@@ -144,14 +145,14 @@ monitored storage nodes
 reward targets
 The environment wrapper expects this configuration file to be available before training or testing is run.
 
-Installation
+## Installation
 1. Clone the repository
 git clone <repository-url>
 cd swmm-error-compensation
 2. Install dependencies
 pip install -r requirements.txt
 
-Dependencies
+## Dependencies
 Main Python dependencies include:
 tensorflow
 pyswmm
@@ -164,7 +165,7 @@ joblib
 pyyaml
 See requirements.txt for details.
 
-Usage
+## Usage
 Training
 Run:
 python train.py
@@ -172,7 +173,7 @@ Testing
 Run:
 python test.py
 
-Practical Notes
+## Practical Notes
 1. Scope of reproducibility
 This package is intended to provide the study-specific implementation and workflow used in the manuscript. It is designed to document the main methodology rather than serve as a general-purpose benchmark package.
 2. Case-specific inputs
@@ -191,7 +192,7 @@ _teminp/
 _temtestinp/
 These folders are used for training and testing runs, respectively.
 
-Attributions and Provenance
+## Attributions and Provenance
 Some lower-level reinforcement-learning components in this package are based on previously released GPL-licensed open-source research code.
 Original source repository/project:
 DRL_state_selection_cost
@@ -199,17 +200,17 @@ Repository URL:
 https://github.com/DantEzio/DRL_state_selection_cost
 Please refer to NOTICE.md or NOTICE.txt for source and modification information.
 
-License
+## License
 This package is distributed under the GNU General Public License v3.0 (GPL v3).
 Please also see:
 LICENSE
 NOTICE.txt
 
-Suggested Citation
+## Suggested Citation
 If you use this package, please cite:
 The present manuscript:
 Enhancing the robustness of deep reinforcement learning-based real-time control for urban drainage systems through error correction
 The original source repository/project and associated publications where relevant.
 
-Contact
+## Contact
 For questions regarding the study-specific implementation, please contact the corresponding author of the manuscript.
