@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+scipy
+joblib
+pyyaml
+tensorflow
+pyswmm
+swmm-api

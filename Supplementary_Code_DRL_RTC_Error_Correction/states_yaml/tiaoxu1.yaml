@@ -1,0 +1,60 @@
+# Example configuration file for the SWMM-based control scenario
+
+# Name of scenario
+name: tiaoxu1
+
+# State definitions
+states:
+  - id: "10YS11204"
+    type: volume
+  - id: "10YS7112"
+    type: volume
+  - id: "10YS11212_1"
+    type: volume
+  - id: "10YS7059"
+    type: volume
+  - id: "10YS169"
+    type: volume
+  - id: "Y041908"
+    type: volume
+  - id: "23YS081"
+    type: volume
+  - id: "10YS7080"
+    type: volume
+  - id: "10YS7095"
+    type: volume
+  - id: "10YS7084"
+    type: depthN
+  - id: "Y041891"
+    type: depthN
+  - id: "10YS11237"
+    type: depthN
+  - id: "RAIN00001"
+    type: rainfall
+
+# Control assets
+action_assets:
+  - "C00532"
+  - "C00528"
+  - "C17993"
+
+# Nodes associated with the controlled assets
+action_nodes:
+  - "10YS7095"
+  - "10YS7084"
+  - "Y041891"
+
+# Nodes monitored for storage depth/flooding diagnostics
+monitor_storage_nodes:
+  - "10YS7095"
+  - "10YS7084"
+  - "Y041891"
+
+# Performance targets (id, attribute, weight)
+reward_targets:
+  - id: "system"
+    attribute: flooding
+    weight: 1
+  - id: "10YS7118"
+    attribute: total_outflow
+    weight: 1
